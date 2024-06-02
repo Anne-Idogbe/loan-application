@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Eligibility Checker</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Check Your Loan Eligibility</h1>
+        <form id="loanForm">
+            <label for="income">Total Income:</label>
+            <input type="number" id="income" name="income" required>
+
+            <label for="currentAmount">Current Amount in Account:</label>
+            <input type="number" id="currentAmount" name="currentAmount" required>
+            
+            <label for="loanAmount">Desired Loan Amount:</label>
+            <input type="number" id="loanAmount" name="loanAmount" required>
+
+            <label for="creditHistory">6 Months Credit History:</label>
+            <select id="creditHistory" name="creditHistory" required>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <label for="lastDepositDate">Last Deposit Date:</label>
+            <input type="date" id="lastDepositDate" name="lastDepositDate" required>
+
+            <label for="lastLoanDate">Last Loan Collection Date:</label>
+            <input type="date" id="lastLoanDate" name="lastLoanDate" required>
+
+            <label for="loanRepaymentPeriod">Loan Repayment Period (months):</label>
+            <input type="number" id="loanRepaymentPeriod" name="loanRepaymentPeriod" required>
+
+            <label for="accountType">Account Operated Type:</label>
+            <select id="accountType" name="accountType" required>
+                <option value="current">Current</option>
+                <option value="savings">Savings</option>
+            </select>
+            
+            <button type="submit">Check Eligibility</button>
+        </form>
+        <div id="result"></div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

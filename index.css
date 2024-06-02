@@ -1,0 +1,60 @@
+body {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-image:url(./image/banking-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    
+}
+
+
+.container {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.3);
+    margin-top: 50px;
+    background-color: rgba(0, 0, 0, 0.096);
+    color: white;
+    
+}
+
+h1 {
+    text-align: center;
+    font-weight: 1000;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label, input, select, button {
+    margin: 10px 0;
+}
+input,select{
+    padding: 10px 20px;
+}
+button {
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color:rgba(0, 0, 255, 0.300);
+}
+
+#result {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.2em;
+}
